@@ -11,15 +11,31 @@
 ##sudo apt upgrade
 ##sudo apt-get install git
 echo "Verificando a versão do git instalada"
+echo "Enter to git --version"
+read
 git --version
-
+echo "verificando Status atual git"
+echo "Enter to git status"
+read
 echo "Status Atual git"
 git status
-#/** O Comando cd permite ao usuario linux navegar pelos diretorios
-#/** tornando assim sua utilização essenssial para administraçao
-#/** e implementação de recursos no sitema.
-#/** A capacidade de utilização de combinação de parametros com outros
-#/** comando traz eficiência e eficácia nas tarefas de utilização e
-#/** Administração de sistemas Linux. 
+
+echo "Enter to git add ."
+var="S"
+echo "Deseja add tudo ? S/n"
+read var
+if ["$var" !="S"]; then 
+	echo "Saida" 
+	break
+fi
+git add .
+echo "Enter to commit -m 'Commit By ./HMeneses'"
+read
+git commit -m "Commit By ./HMeneses"
+echo "enter to git puss"
+read
+git push
+
+#/**
 #-----------------------------------/** That's All **/--------------#
 
