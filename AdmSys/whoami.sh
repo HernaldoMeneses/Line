@@ -4,15 +4,15 @@ echo "#-----------------------------------------------Linux-Freadom-#"
 echo "#     Org: Line by line"
 echo "#   Title: whoami + grep"
 echo "#      By: Hernaldo Meneses"
-echo "#    Date: 20/11/2023 23:13"
-echo "#Function: Exemplificar a utilização do comando hostname ."
+echo "#    Date: 01/11/2023 00:27"
+echo "#Function: Exemplificar a utilização do comando whoam + grep."
 echo "#---------------------------------------------------------------#"
 echo "#---------------------------------------------------BashScript-#"
-hostname
-echo "O comando 'hostname' desempenha um papel importnte na administração"
-echo "De sistemas Linux em redes, proporcionando identificação única"
-echo "seja temporaria hostname nametemp"
-echo "ou mesmo permanente sudo hostnamectl set-hostname newname"
+user="username"
+whoami
+echo "who is it?"
+read user
+grep "$user" /etc/passwd
 echo "#------------------------------------------------Linux-Freadom-#"
 echo "#-------------------------------------------------LineByLine-end_#"
 read
