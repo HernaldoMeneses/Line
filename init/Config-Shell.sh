@@ -29,7 +29,7 @@ echo $SHELL
 #
 #/** A shell é a principal interface (user - Sys Operacional)
 #/** Importancia em configurar corretamente
-#/** 1. Usabilidade
+#/** 1. Usuabilidade
 #/** 2. Personalização
 #/** 3. Automação
 #/** 4. Segurança
